@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Location</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="flex flex-col md:flex md:flex-row w-full md:items-center justify-between px-10 py-4">
+        <div class="flex flex-1 flex-row items-center w-full justify-between">
+            <div class="flex">
+                <img class="w-11 h-11" src="asset/Fill 1.png" alt="logo">
+                <div class="text-base text-blue-600 self-center" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">We</div><div class="text-base text-amber-600 self-center" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">tick</div>
+            </div>
+            <button id="tongler" class="bg-yellow-400 p-2 rounded-[5px] md:hidden"><i class="text-white" data-feather="menu"></i></button>
+        </div>
+        <div id="menuBar" class="flex flex-[1.5] flex-col md:flex md:flex-row gap-6 flex-col-reverse w-full md:justify-between hidden ">
+            <div class="text-end md:py-3">
+                <ul class="flex flex-col md:flex md:flex-row gap-3" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">
+                    <li class="hover:text-yellow-600"><a href="index.html">Home</a></li>
+                    <li class="hover:text-yellow-600"><a href="creat-event.html">Creat Event</a></li>
+                    <li class="hover:text-yellow-600"><a href=" ">Location</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-end">
+                <div class="flex flex-row">
+                    <div class="inline-block rounded-full p-0.5 bg-gradient-to-br from-yellow-500 to-blue-400 mx-3 ">
+                        <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="asset/pexels-jack-winbow-1559486.jpg" alt="photo-profile">
+                    </div>
+                    <div class="self-center" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">Jhon Tomson</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class=" bg-[#F4F7FF] md:pt-[50px] w-full" >
+        <article class="flex flex-col gap-10 md:flex md:flex-row py-[50px] w-full p-[100px] w-3/4 justify-center">
+            <div class="leftside flex-1 w-full">
+                <div class="flex justify-center">
+                    <div class="content">
+                        <img src="asset/Bitmap (1).png"  alt=banner-event>
+                       <div class="md:hidden absolute w-[320px] left-[30px] top-[130px] flex flex-col gap-6">
+                            <div class="flex justify-between">
+                                <h1 class=" text-white" style="font-weight: 600; font-size: 24px;">Sights & Sounds <br/> Exhibition</h1>
+                                <i class="text-white" data-feather="heart"></i>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex gap-2">
+                                    <i class="text-red-400 mr-[5px]" data-feather="map-pin"></i><p class="mr-[50px] text-white" style="font-size: 16px; font-weight: 400;">Location</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="text-red-400" data-feather="clock"></i><p class="mr-[50px] text-white" style="font-size: 16px; font-weight: 400;">Wed, 15 Nov, 4:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="py-[1px] text-white">Attendees</p>
+                                <div class="attendees-profile">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile-1">
+                                    </div>
+                                    <div class="profile1">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile-1">
+                                    </div>
+                                    <div class="profile1">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile-1">
+                                    </div>
+                                    <div class="profile1">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile-1">
+                                        <p class="text-white">62+</p>
+                                </div>
+                            </div>
+                            </div>
+                       </div>
+
+                    </div>
+                </div>
+                <div class="flex gap-2 justify-center hidden md:flex"><i data-feather="heart"></i><p style="font-weight: 600;">Add to Wishlist</p></div>
+            </div>
+            <div class="rightside flex-1">
+                <div class="hidden md:block">
+                    <h1>Sights & Sounds <br/> Exhibition</h1>
+                    <div class="flex-location-date">
+                        <div>
+                            <i class="text-red-400 mr-[5px]" data-feather="map-pin"></i><p class="mr-[50px]">Location</p>
+                        </div>
+                        <div>
+                            <i class="text-red-400 mr-[5px]" data-feather="clock"></i><p>Wed, 15 Nov, 4:00 PM</p>
+                        </div>
+                    </div>
+                    <p class="py-[1px]">Attendees</p>
+                    <div class="attendees-profile">
+                        <div class="profile">
+                            <img src="asset/pexels-apex-4041013.jpg" alt="profile-1">
+                        </div>
+                        <div class="profile1">
+                            <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile-1">
+                        </div>
+                        <div class="profile1">
+                            <img src="asset/pexels-pixabay-220453.jpg" alt="profile-1">
+                        </div>
+                        <div class="profile1">
+                            <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile-1">
+                            <p class="text-white">62+</p>
+                    </div>
+                </div>
+                </div>
+                <hr>
+                <h1>Event Detail</h1>
+                <p class="text-gray-400 my-[10px]">After his controversial art exhibition "Tear and Consume" back in November 2018, in which guests were invited to tear up…</p>
+                <a href=" " class="text-yellow-400 hover:text-yellow-600 py-[10px]">Read More</a>
+                <h1 class="my-[10px]">Location</h1>
+                <img class="w-full md:w-2/4" src="asset/Rectangle.png" alt="map">
+                <a href="booking.html"><button type="submit" class="ml-0 mt-[50px] bg-yellow-400 w-full md:w-3/6 h-[50px] text-white rounded-2xl hover:bg-yellow-600" style="font-size: 16px; font-weight: 600; letter-spacing: 1px;">Buy Ticket</button></a>
+
+            </div>
+        </article>
+    </main>
+    <footer class="mt-[1300px] md:mt-[1000px] h-[476px] px-[30px] md:px-[330px] w-full  md:pt-[100px] md:px-[218px] md:bg-[#F4F7FF]">
+       <div class="md:flex md:justify-between">
+        <div class="mb-10">
+            <div class="flex items-center">
+                <img src="asset/Fill 1.png" alt="logo">
+                <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+            </div>
+            <div class="flex gap-2 py-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Find events you love with our</div>
+            <div>
+                <ul class="flex gap-6">
+                    <li><img src="asset/bx_bxl-facebook-square.png"></li>
+                    <li><img src="asset/bx_bxl-whatsapp-square.png"></li>
+                    <li><img src="asset/bx_bxl-instagram-alt.png"></li>
+                    <li><img src="asset/bx_bxl-twitter.png"></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Wetick</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">About Us</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Blog</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Payments</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Mobile App</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Booking</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Create Event</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Discover</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Register</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Company</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Partnership</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Help</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Terms of Service</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Privacy Policy</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Sitemap</li>
+            </ul>
+        </div>
+       </div>
+        <p class="flex pb-[68px] pt-[130px] color-[#5A7184] text-[#C1C5D0]" style="font-family: 'Poppins'; font-weight: 600; font-size: 16px; letter-spacing: 1px; line-height: 21px;">© 2020 Wetick All Rights Reserved</p>
+    </footer>
+    <script>
+        feather.replace()
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="md:flex w-full items-center justify-between px-10 py-4">
+            <div class="flex flex-initial flex-1 items-center justify-between ">
+                <div class="flex items-center">
+                    <img class="w-11 h-11" src="asset/Fill 1.png" alt="logo">
+                    <div class="text-base text-blue-600" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">We</div>
+                    <div class="text-base text-amber-600" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">tick</div>
+                </div>
+                <button id="tongler" class="md:hidden bg-yellow-400 p-2 rounded-[5px] shadow-lg"><i class="text-white" data-feather="menu"></i></button>
+            </div>
+        <div id="menuBar" class="md:flex-1 md:flex hidden">
+            <div class="md:flex-1 py-3">
+                <ul class="flex flex-col gap-3 md:flex md:flex-row md:gap-10 md:justify-end" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">
+                    <li class="hover:text-yellow-600 text-center"><a href="index.html">Home</a></li>
+                    <li class="hover:text-yellow-600 text-center"><a href="creat-event.html">Creat Event</a></li>
+                    <li class="hover:text-yellow-600 text-center"><a href="#location">Location</a></li>
+                </ul>
+            </div>
+            
+            <div class="flex gap-3 md:flex-1 flex-col md:justify-end md:flex md:flex-row md:gap-10 items-center w-full">
+                <div class="flex justify-center" style="font-weight: 500; font-size: 16px; letter-spacing: 1px;">
+                    <a href="login.html" style="font-weight: 600;">Login</a>
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-yellow-400 text-white rounded-2xl h-[40px] px-10 shadow-lg" style="font-weight: 600; font-size: 16px;" type="submit"><a href="signin.html">Sign In</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="bg-yellow-400 h-[660px] w-full relative overflow-hidden">
+            <img class="absolute top-0 left-0 w-full  h-full" src="asset/Elipse.png" alt="elipse">
+            <img class="absolute top-[300px] md:top-[167px] right-0 md:right-[457px]" src="asset/ToyFaces2.png" alt="ToyFaces2">
+            <div class="absolute h-[80px] w-[394px] top-[570px] md:top-[417px] right-[15px] md:right-[490px] bg-gradient-to-t from-yellow-400 via-yellow-400 to-transparent "></div>
+            <img class="absolute top-[180px] md:top-[73px] right-[160px] md:right-[618px]" src="asset/ToyFaces1.png" alt="ToyFaces1">
+            <div class="absolute rotate-180 h-[80px] w-[480px] top-[570px] md:top-[470px] right-[30px] md:right-[620px] bg-gradient-to-b from-yellow-400 via-yellow-400 to-transparent "></div>
+            
+        </div>
+
+        <aside class="text-center pt-[175px] pb-[50px]">
+            <div class="Event md-[25px] bg-yellow-400 w-[200px]">
+                <div class="w-full flex justify-center">
+                    <i class="text-yellow-600" data-feather="minus"></i><p class="text-yellow-600">EVENT</p>
+                </div>
+            </div>
+            <h2 class="pb-[50px] pt-[25px]" style="font-size: 36px; font-weight: 600; letter-spacing: 1px;">Event For You</h2>
+            <div class="flex gap-10 justify-center mx-[30px]">
+                <div class="w-[50px] py-3 border-2 border-white rounded-2xl hover:border-red-500 justiify-center">
+                    <ul class="text-gray-400">
+                        <li class="date" style="font-size: 16px; font-weight: 600;">13</li>
+                        <li class="day">Mon</li>
+                    </ul>
+                </div>
+                <div class="w-[50px] py-3 border-2 border-white rounded-2xl hover:border-red-500 justiify-center">
+                    <ul class="text-gray-400">
+                        <li class="date" style="font-size: 16px; font-weight: 600;">14</li>
+                        <li class="day">Tue</li>
+                    </ul>
+                </div>
+                <div class="w-[50px] py-3 border-2 border-white rounded-2xl hover:border-red-500 justiify-center">
+                    <ul class="text-gray-400">
+                        <li class="date" style="font-size: 16px; font-weight: 600;">15</li>
+                        <li class="day">Wed</li>
+                    </ul>
+                </div>
+                <div class="w-[50px] py-3 border-2 border-white rounded-2xl hover:border-red-500 justiify-center">
+                    <ul class="text-gray-400">
+                        <li class="date" style="font-size: 16px; font-weight: 600;">16</li>
+                        <li class="day">Thu</li>
+                    </ul>
+                </div>
+                <div class="w-[50px] py-3 border-2 border-white rounded-2xl hover:border-red-500 justiify-center">
+                    <ul class="text-gray-400">
+                        <li class="date" style="font-size: 16px; font-weight: 600;">17</li>
+                        <li class="day">Fri</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="overflow-x-scroll ml-[30px] md:ml-[50px] pr-[30px] md:pr-[50px]">
+                <div class="scrol">
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap (1).png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                                <div class="title">Sights & Sounds Exhibition</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+    
+                    <a href="Event-location.html">
+                        <div class="event-banner">
+                            <img src="asset/Bitmap.png" alt="banner1">
+                            <div class="text">
+                                <div class="date">Thu, 16 Nov, 7:00 PM</div>
+                                <div class="title">See it in Gold Class</div>
+                                <div class="attendens">
+                                    <div class="profile">
+                                        <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                                    </div>
+                                    <div class="profile">
+                                        <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                        <div class="plus">+9</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex gap-10 justify-center my-[25px]">
+            <button type="submid" class="p-3 h-[45px] w-[45px] bg-white shadow-lg rounded-[10px]"><i class="text-yellow-400" data-feather="arrow-left"></i></button>
+            <button type="submid" class="p-2 h-[45px] w-[45px] bg-yellow-400 shadow-lg rounded-[10px]"><i class="text-white" data-feather="arrow-right"></i></button>
+        </div>
+    </header>
+
+    <article class="w-full inline-block px-[50px] p-0">
+        <div class="relative w-full inline-block bg-yellow-400 rounded-[40px] overflow-hidden pt-[120px] px-[63px]">
+            <img class="absolute h-full w-full top-0 right-0" src="asset/Mask Group.png" alt="elipse1">
+            <div class="ansolute w-full">
+                <div class="w-[160px] rounded-2xl flex mb-[30px] justify-center bg-yellow-600 shadow-lg">
+                    <i id="location" class="text-white" data-feather="minus"></i><p class="text-white" style="letter-spacing: 1px;">LOCATION</p>
+                </div>
+
+                <div class="flex gap-6 md:block">
+                    <div class="md:flex justify-between gap-[75px] mb-[37px]">
+                        <div class="w-[230px]" style="font-size: 36px; font-weight: 600; line-height: 64px; letter-spacing: 1px;">Discover Events Near You</div>
+                        <div id="jakarta">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/Jakarta.jfif" alt="jakarta">
+                            </div>
+                            <p class="pt-[20px] text-center">Jakarta</p>
+                        </div>
+                        <div id="bandung">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/bandung.jfif" alt="bandung">
+                            </div>
+                            <p class="pt-[20px] text-center">Bandung</p>
+                        </div>
+                        <div id="bali">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/bali.jfif" alt="bali">
+                            </div>
+                            <p class="pt-[20px] text-center">Bali</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex justify-between gap-[75px]">
+                        <div id="Aceh" class="mb-2">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/aceh.jfif" alt="Aceh">
+                            </div>
+                            <p class="pt-[20px] text-center">Aceh</p>
+                        </div>
+                        <div id="Solo">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/solo.jfif" alt="Solo">
+                            </div>
+                            <p class="pt-[20px] text-center">Solo</p>
+                        </div>
+                        <div id="yogyakarta">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/yogyakarta.jfif" alt="yogyakarta">
+                            </div>
+                            <p class="pt-[20px] text-center">yogyakarta</p>
+                        </div>
+                        <div id="Semarang">
+                            <div class=" w-[230px] h-[140px] relative">
+                                <img  class="absolute rounded-2xl" src="asset/semarang.jfif" alt="semarang">
+                            </div>
+                            <p class="pt-[20px] text-center">yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="m-0 mb-10 item-center w-[225px] h-[40px] bg-white shadow-lg rounded-2xl text-yellow-400" style="font-size: 16px; font-weight: 600;">See All</button>
+            </div>
+        </div>
+    </article>
+
+    <div class="mt-[1000px] md:mt-[800px] text-center pt-[175px] pb-[50px]">
+        <div class="Event md-[25px] bg-yellow-400 w-[200px]">
+            <div class="w-full flex justify-center">
+                <i class="text-yellow-600" data-feather="minus"></i><p class="text-yellow-600">CATEGORY</p>
+            </div>
+        </div>
+        <h2 class="pb-[50px] pt-[25px]" style="font-size: 36px; font-weight: 600; letter-spacing: 1px;">Browse Events By Category</h2>
+        <div class="md:flex gap-10 md:justify-center text-center md:px-[300px]">
+           <div class="inline-block">
+                <ul class="text-gray-400 flex gap-10 justify-center">
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Music</a></li>
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Art</a></li>
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Outdoor</a></li>
+                </ul>
+            </div>
+            <div class="inline-block">
+                <ul class="text-gray-400 flex  gap-10 justify-center">
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Workshop</a></li>
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Sport</a></li>
+                    <li class="date hover:text-red-400 cursor-pointer" style="font-size: 16px; font-weight: 600;"><a href=" ">Festifal</a></li>
+                </ul>
+           </div>
+            
+        </div>
+    </div>
+
+    <div class="contain-category">
+        <div class="overflow-x-scroll ml-[30px] md:ml-[50px] pr-[30px] md:pr-[50px] flex justify-center pb-[175px]">
+            <div class="scrol flex gap-6">
+                <div class="banner1-event">
+                    <div class="flex-column">
+                        <img src="asset/Bitmap (1).png" alt="banner1">
+                        <div class="blok-color"></div>
+                    </div>
+                    <div class="text1">
+                        <div class="attendens1">
+                            <div class="category-event-option">
+                                <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                <div class="plus-oncategory">+9</div>
+                            </div>
+                        </div>
+                        <div class="date-category">Wed, 15 Nov, 4:00 PM</div>
+                        <div class="title-category">Sights & Sounds Exhibition</div> 
+                    </div>
+                    <div></div>
+                </div>
+        
+                <div class="banner1-event">
+                    <div class="flex-column">
+                        <img src="asset/Bitmap.png" alt="banner1">
+                        <div class="blok-color"></div>
+                    </div>
+                    <div class="text1">
+                        <div class="attendens1">
+                            <div class="category-event-option">
+                                <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                <div class="plus-oncategory">+9</div>
+                            </div>
+                        </div>
+                        <div class="date-category">Wed, 15 Nov, 4:00 PM</div>
+                        <div class="title-category">See it in Gold Class</div> 
+                    </div>
+                    <div></div>
+                </div>
+        
+                <div class="banner1-event">
+                    <div class="flex-column">
+                        <img src="asset/Bitmap (1).png" alt="banner1">
+                        <div class="blok-color"></div>
+                    </div>
+                    <div class="text1">
+                        <div class="attendens1">
+                            <div class="category-event-option">
+                                <img src="asset/pexels-apex-4041013.jpg" alt="profile1" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-jack-winbow-1559486.jpg" alt="profile2" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-pixabay-220453.jpg" alt="profile3" />
+                            </div>
+                            <div class="category-event-option">
+                                <img src="asset/pexels-spencer-selover-428364.jpg" alt="profile4" />
+                                <div class="plus-oncategory">+9</div>
+                            </div>
+                        </div>
+                        <div class="date-category">Wed, 15 Nov, 4:00 PM</div>
+                        <div class="title-category">Sights & Sounds Exhibition</div> 
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative inline-block w-full pt-[89px] px-[30px] md:px-[285px] bg-zinc-700">
+        <img  class="hidden md:block absolute top-0 left-0 w-full h-full" src="asset/Group 5932.png" alt="partner">
+        <div class=" text-center">
+            <div class="Event md-[25px] bg-zinc-500 w-[200px]">
+                <div class="w-full flex justify-center">
+                    <i class="text-white" data-feather="minus"></i><p class="text-white">PARTNER</p>
+                </div>
+            </div>
+            <h2 class="pb-[50px] pt-[25px] text-white" style="font-size: 36px; font-weight: 600; letter-spacing: 1px;">Our Trusted Partners</h2>
+            <div class="justify-center text-gray-400">
+                <p class="date" style="font-size: 16px; font-weight: 600;">By companies like :</p>
+            </div>
+        </div>
+        <div class="my-[56px]">
+            <ul class="flex gap-10 md:gap-6 justify-center">
+                <div class="flex-column md:flex-row gap-6">
+                    <li><img class="h-[70px] w-full" src="asset/Icon-01.png"></li>
+                    <li><img class="h-[70px] w-full" src="asset/Icon-02.png"></li>
+                    <li><img class="h-[70px] w-full" src="asset/Icon-03.png"></li>
+                </div>
+                <div class="flex-column md:flex-row gap-6">
+                    <li><img class="h-[70px] w-full" src="asset/Icon-04.png"></li>
+                    <li><img class="h-[70px] w-full" src="asset/Icon-05.png"></li>
+                    <li><img class="h-[70px] w-full" src="asset/Icon-06.png"></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <footer class=" h-[476px] px-[30px] md:px-[330px] w-full  md:pt-[100px] md:px-[218px] md:bg-[#F4F7FF]">
+        <div class="md:flex md:justify-between">
+         <div class="mb-10">
+             <div class="flex items-center">
+                 <img src="asset/Fill 1.png" alt="logo">
+                 <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+             </div>
+             <div class="flex gap-2 py-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Find events you love with our</div>
+             <div>
+                 <ul class="flex gap-6">
+                     <li><img src="asset/bx_bxl-facebook-square.png"></li>
+                     <li><img src="asset/bx_bxl-whatsapp-square.png"></li>
+                     <li><img src="asset/bx_bxl-instagram-alt.png"></li>
+                     <li><img src="asset/bx_bxl-twitter.png"></li>
+                 </ul>
+             </div>
+             
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Wetick</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">About Us</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Blog</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Payments</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Mobile App</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Booking</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Create Event</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Discover</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Register</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Company</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Partnership</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Help</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Terms of Service</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Privacy Policy</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Sitemap</li>
+             </ul>
+         </div>
+        </div>
+         <p class="flex pb-[68px] pt-[130px] color-[#5A7184] text-[#C1C5D0]" style="font-family: 'Poppins'; font-weight: 600; font-size: 16px; letter-spacing: 1px; line-height: 21px;">© 2020 Wetick All Rights Reserved</p>
+     </footer>
+     <script>
+         feather.replace()
+       </script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

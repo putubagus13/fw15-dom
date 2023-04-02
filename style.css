@@ -1,0 +1,518 @@
+body{
+    margin: 0;
+}
+
+.content{
+    height: 492px;
+    width: 375px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    margin-bottom: 53px;
+    box-shadow: 0px 4px 5px #27262679;
+}
+
+.content > img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*-------------right side--------------*/
+.rightside{
+    flex: 0.7;
+}
+
+.By-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-location-date{
+    display: flex;
+    padding-top: 30px; padding-bottom:  30px;
+    gap: 50px;
+}
+
+.flex-location-date div{
+    display: flex;
+}
+
+.flex-location-date p{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rightside h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.attendees-profile{
+    display: flex;
+    cursor: pointer;
+}
+
+.profile > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile1{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: -10px;
+}
+
+.profile1 > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile1 > p{
+    position: absolute;
+    font-size: 12px;
+    top: 6px;
+    left: 5px;
+}
+
+.rightside hr{
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    border-radius: 10px;
+}
+
+.tixket-image img{
+    height: 45px;
+    width: auto;
+    cursor: pointer;
+}
+
+.rightside h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.rightside h3{
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 65px;
+}
+
+.rightside h4{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.price{
+    text-align: center;
+}
+
+.checkout li{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.checkout ul{
+    margin-bottom: 15px;
+}
+
+/* -----homepage section banner----- */
+.Event{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section{
+    display: inline;
+    overflow: hidden;
+}
+
+.overflow-x-scroll::-webkit-scrollbar{
+    width: 0;
+}
+
+.scrol{
+    display: inline-flex;
+}
+
+.event-banner{
+    border-radius: 25px;
+    width: 260px;
+    height: 376px;
+    overflow: hidden;
+    position: relative;
+}
+section .event-banner{
+    margin-right: 25px;
+}
+
+.event-banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-banner > .text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    bottom: 0;
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    padding: 20px;
+}
+
+.event-banner .profile{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 100px;
+    border: 2px solid white;
+
+}
+
+.event-banner .profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text .attendens{
+    display: flex;
+    margin-left: 20px;
+}
+
+.profile{
+    margin-left: -10px ;
+}
+
+.event-banner > .text > .date{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.event-banner > .text > .title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.text .attendens .profile > .plus{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.text .attendens .profile{
+    position: relative;
+}
+
+.profile > .plus{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 5px;
+}
+
+/*-----homepage conten4 ------*/
+.conten4{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 190px;
+}
+
+.scrol-left{
+    position: relative;
+    right: 100px;
+}
+
+.scrol-right{
+    position: relative;
+    left: 0px;
+}
+
+.scrol-left img, .scrol-right img {
+    position: absolute;
+    transition: opacity 0s ease-in-out;
+}
+
+.scrol-left .up, .scrol-right .down{
+    top: 4px;
+}
+
+.scrol-left .up:hover, .scrol-right .up:hover{
+    opacity: 0;
+}
+
+/*conten 5*/
+
+.conten5{
+    height: 700px;
+    width: 1266px;
+    position: relative;
+    background: #F1BF43;
+    border-radius: 50px;
+    padding: 74px 68px 74px 68px;
+    margin: auto;
+}
+
+.conten5 .ellipse1{
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+}
+
+
+.conten5 .ellipse2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.conten5 .ellipse3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+article{
+    position: absolute;
+}
+
+article .location{
+    display: flex;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article .location img{
+    height: 1px;
+    width: auto;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#location{
+    align-self: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 5px;
+
+    color: #373A42;
+}
+
+.conten5 .city-image-line{
+    display: flex;
+    width: 1130px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.conten5 .city-image-line img{
+    height: 140px;
+    width: 230px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.conten5 .city-image-line p{
+    text-align:center;
+}
+
+.conten5 .city-image-line h1{
+    width: 230px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 51px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    
+
+    color: #333333;
+}
+
+article button{
+    height: 40px;
+    width: 25%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 8px 10px #c9c9c869;
+    border-style: unset;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+
+    color: #F1BF43;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 410px;
+}
+
+article button:hover{
+    background: #3366FF;
+    color: #ffffff;
+    box-shadow: 0px 8px 10px #f1c04369;
+}
+
+
+/*---------homepage category----------*/
+.banner1-event{
+            border-radius: 25px;
+            width: 263px;
+            height: 300px;
+            border: 0px solid violet;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .flex-column > img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 200px;
+            position:absolute;
+            object-fit: cover;
+        }
+
+        .banner1-event> .text1{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            bottom: 0;
+            color:white;
+            padding: 20px;
+        }
+
+        .banner1-event .category-event-option{
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            border-radius: 100px;
+            border: 2px solid white;
+
+        }
+
+        .banner1-event .category-event-option > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .attendens1{
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .category-event-option{
+            margin-left: -15px ;
+        }
+
+        .banner1-event > .text1 > .date-category{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+
+        .banner1-event > .text1 > .title-category{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 2px;
+        }
+
+        .attendens1 .category-event-option > .plus-oncategory{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 2px;
+        }
+
+        .attendens1 .category-event-option{
+            position: relative;
+        }
+
+        .category-event-option> .plus-oncategory{
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            left: 15px;
+        }
+
+        .blok-color{
+            position: absolute;
+            background-color: rgb(250 204 21);
+            bottom: 0px;
+            left:0;
+            width: 100%;
+            height: 130px;
+         }
+
+         .flex-column{
+            display: flex;
+            flex-direction: column;
+         }
+
+         .blok-collor{
+            flex:1;
+         }

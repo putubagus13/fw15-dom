@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="flex flex-col md:flex md:flex-row w-full md:items-center justify-between px-10 py-4">
+        <div class="flex flex-1 flex-row items-center w-full justify-between">
+            <div class="flex">
+                <img class="w-11 h-11" src="asset/Fill 1.png" alt="logo">
+                <div class="text-base text-blue-600 self-center" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">We</div><div class="text-base text-amber-600 self-center" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">tick</div>
+            </div>
+            <button id="tongler" class="bg-yellow-400 p-2 rounded-[5px] md:hidden"><i class="text-white" data-feather="menu"></i></button>
+        </div>
+        <div id="menuBar" class="flex flex-[1.5] flex-col md:flex md:flex-row gap-6 flex-col-reverse w-full md:justify-between hidden ">
+            <div class="text-end md:py-3">
+                <ul class="flex flex-col md:flex md:flex-row gap-3" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">
+                    <li class="hover:text-yellow-600"><a href="index.html">Home</a></li>
+                    <li class="hover:text-yellow-600"><a href="creat-event.html">Creat Event</a></li>
+                    <li class="hover:text-yellow-600"><a href=" ">Location</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-end">
+                <div class="flex flex-row">
+                    <div class="inline-block rounded-full p-0.5 bg-gradient-to-br from-yellow-500 to-blue-400 mx-3 ">
+                        <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="asset/pexels-jack-winbow-1559486.jpg" alt="photo-profile">
+                    </div>
+                    <div class="self-center" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">Jhon Tomson</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="w-full bg-white md:bg-[#F4F7FF] md:pt-[50px] px-[20px] md:px-[120px] inline-block">
+        <article class="flex gap-16 flex-col md:flex-row bg-white rounded-2xl py-[10px] md:py-[78px] px-[30px] md:px-[100px]">
+            <div class="flex-1 flex item-center justify-center">
+                <div class="h-full overflow-hidden">
+                    <img class="h-[500px] w-full rotate-0 md:rotate-45 object-contain" src="asset/Group 230.png" alt="banner-event">
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="flex justify-between h-[40px] items-center pb-10">
+                    <h1 style="font-weight: 600; font-size: 20px;">Tickets</h1>
+                    <div class="By-price flex">
+                        <p class="text-red-400 self-center" style="font-weight:600;">BY PRICE</p> 
+                        <button class="shadow-lg h-[30px] w-[30px] rounded-[5px] p-[3px]" type="submit"><i class="text-yellow-600" data-feather="dollar-sign"></i></button>
+                    </div>
+                </div>
+
+                <div class="buy-ticket-side">
+                    <div class="flex justify-between py-3">
+                        <div class="flex items-center gap-[20px]">
+                            <div class="tixket-image">
+                                <img class="w-[40px] h-full" src="asset/Group 845.png" alt="ticket-row1">
+                            </div>
+                            <div class="section">
+                                <h2 style="font-size: 16px; font-weight: 600;">Section reg, Row 1</h2>
+                                <p class="text-gray-400">12 Seats available</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h2 class="text-center" style="font-size: 16px; font-weight: 600;">$15</h2>
+                            <p class="text-gray-400">per person</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between py-3">
+                        <div class="flex-initial px-[60px]">
+                            <h3 style="font-size: 16px; font-weight: 600;">Quantity</h3>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">-</button>
+                            <h4>0</h4>
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buy-ticket-side">
+                    <div class="flex justify-between py-3">
+                        <div class="flex items-center gap-[20px]">
+                            <div class="tixket-image">
+                                <img class="w-[40px] h-full" src="asset/Group 846.png" alt="ticket-row1"">
+                            </div>
+                            <div class="section">
+                                <h2 style="font-size: 16px; font-weight: 600;">Section reg, Row 2</h2>
+                                <p class="text-gray-400">12 Seats available</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h2 class="text-center" style="font-size: 16px; font-weight: 600;">$35</h2>
+                            <p class="text-gray-400">per person</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between py-3">
+                        <div class="flex-initial px-[60px]">
+                            <h3 style="font-size: 16px; font-weight: 600;">Quantity</h3>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">-</button>
+                            <h4>2</h4>
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buy-ticket-side">
+                    <div class="flex justify-between py-3">
+                        <div class="flex items-center gap-[20px]">
+                            <div class="tixket-image">
+                                <img class="w-[40px] h-full" src="asset/Group 847.png" alt="ticket-row1">
+                            </div>
+                            <div class="section">
+                                <h2 style="font-size: 16px; font-weight: 600;">Section reg, Row 3</h2>
+                                <p class="text-gray-400">12 Seats available</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h2 class="text-center" style="font-size: 16px; font-weight: 600;">$50</h2>
+                            <p class="text-gray-400">per person</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between py-3">
+                        <div class="flex-initial px-[60px]">
+                            <h3 style="font-size: 16px; font-weight: 600;">Quantity</h3>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">-</button>
+                            <h4>0</h4>
+                            <button type="submit" class="border-2 rounded-[6px] text-gray-400 h-[30px] w-[33px] hover:text-black" style="font-size:20px; font-weight: 400;">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <hr class="my-10">
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-3 checkout w-full" style="font-size: 16px; font-weight: 600;">
+                        <ul class="flex justify-between">
+                            <li>Ticket Section</li>
+                            <li class="text-yellow-600">VIP</li>
+                        </ul>
+                        <ul class="flex justify-between">
+                            <li>Quantity</li>
+                            <li class="text-yellow-600">2</li>
+                        </ul>
+                        <ul class="flex justify-between">
+                            <li>Total Payment</li>
+                            <li class="text-yellow-600">$70</li>
+                        </ul>
+                    </div>
+                    <a href="payment-metode.html"><button type="input" class="ml-0 h-[61px] w-full md:w-3/2 rounded-2xl md:my-[50px] bg-yellow-400 shadow-lg text-white" style="font-weight: 600; font-size: 16px;">Chackout</button></a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="my-10 h-[476px] px-[30px] md:px-[330px] w-full  md:pt-[100px] md:px-[218px] md:bg-[#F4F7FF]">
+       <div class="md:flex md:justify-between">
+        <div class="mb-10">
+            <div class="flex items-center">
+                <img src="asset/Fill 1.png" alt="logo">
+                <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+            </div>
+            <div class="flex gap-2 py-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Find events you love with our</div>
+            <div>
+                <ul class="flex gap-6">
+                    <li><img src="asset/bx_bxl-facebook-square.png"></li>
+                    <li><img src="asset/bx_bxl-whatsapp-square.png"></li>
+                    <li><img src="asset/bx_bxl-instagram-alt.png"></li>
+                    <li><img src="asset/bx_bxl-twitter.png"></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Wetick</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">About Us</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Blog</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Payments</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Mobile App</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Booking</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Create Event</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Discover</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Register</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pb-[10px] text-[#C1C5D0]">
+                <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Company</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Partnership</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Help</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Terms of Service</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Privacy Policy</li>
+                <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Sitemap</li>
+            </ul>
+        </div>
+       </div>
+        <p class="flex pb-[68px] pt-[130px] color-[#5A7184] text-[#C1C5D0]" style="font-family: 'Poppins'; font-weight: 600; font-size: 16px; letter-spacing: 1px; line-height: 21px;">© 2020 Wetick All Rights Reserved</p>
+    </footer>
+    <script>
+        feather.replace()
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>

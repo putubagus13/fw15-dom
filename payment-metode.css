@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('asset/Poppins1-Regular.ttf');
+}
+a{
+    text-decoration: unset;
+}
+/* nav{
+    display: flex;
+    height: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+nav .navbar{
+    display: flex;
+    gap: 0px;
+}
+
+.left{
+    display: flex;
+    align-self: center;
+    margin-right: 293px;
+    
+}
+
+.mid{
+    display: flex;
+    margin-right: 190px;
+    align-self: center;
+}
+
+.login{
+    align-self: center;
+}
+
+.right{
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+.right p{
+    text-align: center;
+}*/
+
+#We{
+    color: #3366FF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    align-self: center;
+}
+
+#tick{
+    color: #E17c08;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    align-self: center;
+}
+
+nav img, .logo{
+    height: 50px;
+    width: auto;
+}
+
+.nav{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav p{
+    text-align: center;
+}
+
+.angker{
+    margin: 0;
+}
+
+.nav .angker:hover{
+    color: #e2cc21;
+}
+
+.right img{
+    border: 1px solid #E17c08;
+    border-radius: 100%;
+}
+
+
+p{
+    align-self: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+
+    color: #373A42;
+}
+
+nav a{
+    align-self: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+
+    color: #373A42;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+ 
+
+/*main side*/
+main{
+    display: flex;
+    height: 1350px;
+    background:#F4F7FF;
+}
+
+.line1, .line2, .line3, .line4, .line5{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.grub-left{
+    display: flex;
+    justify-content: left;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #373A42;
+    padding-bottom: 50px;
+}
+
+.payment-metode{
+    margin-left: 120px;
+    margin-right: 50px;
+    padding-top: 71px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 710px;
+    width: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.payment-metode div{
+    margin-top: 8px; margin-bottom:  8px;
+    margin-right: 8px;
+}
+
+.payment-metode input{
+    margin-right: 23px;
+}
+
+.card-icon{
+    padding-top: 9px; padding-left: 7.5px;
+    height: 35px;
+    width: 35px;
+    background: rgba(136, 77, 255, 0.2);;
+    border-radius: 5px;
+}
+
+.option-icon{
+    height: 6px;
+    width: 12px;
+    margin-right: 60px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.line2 img{
+    padding-left: 35px;
+}
+
+.line2 button{
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border: 1px solid #356E9A;
+    border-radius: 10px;
+    border-style: dashed;
+
+    margin-left: 15px ;
+    align-self: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #356E9A;
+    cursor: pointer;
+}
+
+.bank-icon{
+    padding-top: 7px; padding-left: 7.5px;
+    height: 35px;
+    width: 35px;
+    background:rgba(252, 16, 85, 0.2);;
+    border-radius: 5px;
+}
+
+.retail-icon{
+    padding-top: 6px; padding-left: 7.5px;
+    height: 35px;
+    width: 35px;
+    background:rgba(255, 137, 0, 0.2);;
+    border-radius: 5px;
+}
+
+.money-icon{
+    padding-top: 9px; padding-left: 12px;
+    height: 35px;
+    width: 35px;
+    background:rgba(51, 102, 255, 0.2);;
+    border-radius: 5px;
+}
+
+.payment-metode div p{
+    color: #373A42;
+    align-self: center;
+    margin-left: 0;
+}
+
+.ticket-detail{
+    height: 415px;
+    width: 496px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 71px 90px 66px 90px;
+    
+}
+
+.ticket{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.ticket p{
+    padding: 5px 0px 10px 0px;
+}
+
+
+.blue p{
+    justify-content: right;
+    color: #356E9A;
+}
+
+.ticket-detail button{
+    height: 55px;
+    width: 100%;
+    border-radius: 15px;
+    border-style: none;
+    background: #F1BF43;
+    box-shadow: 0px 8px 10px #f1c04369;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+    color: #FFFF;
+}
+
+.ticket-detail button:hover{
+    background: #3366FF;
+    box-shadow: 0px 8px 10px #3366ff60;
+}
+
+/*footer side*/
+
+footer{
+    margin-top: -500px;
+    background:#F4F7FF;
+}
+
+.upside{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 51px;
+}
+
+.left-side div{
+    display: flex;
+}
+
+.sosmed{
+    margin-top: 25px;
+    display: flex;
+}
+
+.sosmed img{
+    margin-right: 21px;
+    height: 20px; width: auto;
+}
+
+.right-side{
+    display: flex;
+}
+
+.right-side div{
+    padding-left: 30px;
+}
+
+h5{
+    padding-right: 120px;
+    padding-bottom: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 1px;
+
+    color: #373A42;
+}
+
+li{
+    padding-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 1px;
+
+    color: #959697;
+}
+
+.bottomside p{
+    padding-bottom: 42px;
+    padding-left: 132px;
+}
+
+
+@media (max-width: 780px){
+
+/*-----------nav side---------*/
+    nav .navbar{
+        display: none;
+    }
+
+/*-----------main side---------*/
+    main{
+        flex-direction: column;
+        background: none;
+    }
+
+    .line1, .line2, .line3, .line4, .line5{
+        width: 100%px;
+        justify-content:space-between;
+    }
+
+    .line2{
+        justify-content: left;
+        gap: 30px;
+    }
+
+    .line2 img{
+        height: auto;
+        width: 60%;
+    }
+
+    .line2 button{
+        height: 35px;
+        width: 35px;
+        background: #fff;
+        border: 1px solid #356E9A;
+        border-radius: 10px;
+        border-style: dashed;
+    
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .payment-metode{
+        height: 700px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 20px 20px;
+        display: inline-block;
+        box-shadow: 0px 2px 30px #9c9b9b34;
+        border-radius: unset;
+    }
+
+    .ticket-detail{
+        height: 415px;
+        width: 100%;
+        background: #fff;
+        border-radius: unset;
+        padding: 20px 20px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 2px 2px 30px#cdcecf;
+    }
+
+    .ticket-detail button{
+        height: 40px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+
+/*-----------footer------------*/
+    .upside{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer{
+        margin-top: 0;
+        background: none;
+    }
+    footer .left-side{
+        margin-left: 30px;
+    }
+
+    footer .right-side{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bottomside p{
+        padding-left: 30px;
+    }
+}

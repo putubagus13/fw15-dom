@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: "Poppins";
+        }
+    </style>
+
+</head>
+<body>
+    <main class="flex h-[1024px]">
+        <div class="hidden md:block md:flex-1 bg-yellow-400 relative">
+            <img class="absolute top-[367px] right-[157px]" src="asset/ToyFaces2.png" alt="ToyFaces2">
+            <div class="absolute rotate-180 h-[194px] w-[394px] top-[510px] right-[50px] bg-gradient-to-b from-yellow-400 to-transparent "></div>
+            <img class="absolute top-[273px] right-[318px]" src="asset/ToyFaces1.png" alt="ToyFaces1">
+            <div class="absolute rotate-180 h-[250px] w-[480px] top-[480px] right-[190px] bg-gradient-to-b from-yellow-400 to-transparent "></div>
+        </div>
+        <div class="px-[30px] w-full md:flex-initial md:pt-[214px] md:w-[516px] md:px-[100px]">
+            <div class="flex items-center pb-[57px]">
+                <a href="index.html"><img src="asset/Fill 1.png" alt="logo"></a>
+                <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+            </div>
+            <h1 style="font-family: 'Poppins'; font-weight: 800; font-size: 24px;">Log In</h1>
+            <p class="flex gap-2 pb-11 pt-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">Hi, Welcome back to Urticket!</p>
+            <form id="form">
+                <input id="fullname" name="fullname" class="outline-none my-2 h-14 w-full border-2 rounded-2xl px-5" style="font-family: 'Poppins'; font-weight: 400;" type="text" placeholder="Username">
+                <input id="email" name="email" class="outline-none my-2 h-14 w-full border-2 rounded-2xl px-5" style="font-family: 'Poppins'; font-weight: 400;" type="email" placeholder="Email">
+                <input id="password" name="password" class="outline-none my-2 h-14 w-full border-2 rounded-2xl px-5" style="font-family: 'Poppins'; font-weight: 400;" type="password" placeholder="Password">
+                <div id="alertLogin" class="text-red-600"></div>
+                <div class="flex py-4 justify-items-end">
+                    <a href="forgot-password.html" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px;" class="text-yellow-600">Forgot Password?</a>
+                </div>
+                <button class="my-2 h-14 w-full text-center text-white bg-yellow-400 rounded-2xl shadow-lg" style="font-weight: 600; font-size: 20px;" type="submit">Sign in</button>
+            </form>
+            
+        </div>
+    </main>
+    <footer class="hidden md:block h-[476px] px-[30px] md:px-[330px] w-full  md:pt-[100px] md:px-[218px]">
+        <div class="md:flex md:justify-between">
+         <div class="mb-10">
+             <div class="flex items-center">
+                 <img src="asset/Fill 1.png" alt="logo">
+                 <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+             </div>
+             <div class="flex gap-2 py-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Find events you love with our</div>
+             <div>
+                 <ul class="flex gap-6">
+                     <li><img src="asset/bx_bxl-facebook-square.png"></li>
+                     <li><img src="asset/bx_bxl-whatsapp-square.png"></li>
+                     <li><img src="asset/bx_bxl-instagram-alt.png"></li>
+                     <li><img src="asset/bx_bxl-twitter.png"></li>
+                 </ul>
+             </div>
+             
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Wetick</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">About Us</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Blog</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Payments</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Mobile App</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Booking</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Create Event</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Discover</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Register</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Company</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Partnership</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Help</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Terms of Service</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Privacy Policy</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Sitemap</li>
+             </ul>
+         </div>
+        </div>
+         <p class="flex pb-[68px] pt-[130px] color-[#5A7184] text-[#C1C5D0]" style="font-family: 'Poppins'; font-weight: 600; font-size: 16px; letter-spacing: 1px; line-height: 21px;">© 2020 Wetick All Rights Reserved</p>
+     </footer>
+     <script src="script.js"></script>
+</body>
+</html>

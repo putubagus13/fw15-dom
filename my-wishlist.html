@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="flex w-full items-center justify-between px-10 py-4">
+        <div class="flex items-center justify-between w-full md:w-0">
+            <button id="tongler" class="md:hidden bg-yellow-400 p-2 rounded-[5px] shadow-lg"><i class="text-white" data-feather="menu"></i></button>
+            <div class="flex">
+                <img class="w-11 h-11" src="asset/Fill 1.png" alt="logo">
+                <div class="text-base text-blue-600 py-3" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">We</div>
+                <div class="text-base text-amber-600 py-3" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">tick</div>
+            </div>
+        </div>
+        <div>
+            <ul class="hidden md:flex gap-x-10" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">
+                <li class="hover:text-yellow-600"><a href=" ">Home</a></li>
+                <li class="hover:text-yellow-600"><a href=" ">Creat Event</a></li>
+                <li class="hover:text-yellow-600"><a href=" ">Location</a></li>
+            </ul>
+        </div>
+        <a href="profile.html">
+            <div class="hidden md:flex">
+                <div class="inline-block rounded-full p-0.5 bg-gradient-to-br from-yellow-500 to-blue-400 mx-3 ">
+                    <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="asset/pexels-jack-winbow-1559486.jpg" alt="photo-profile">
+                </div>
+                <div class="self-center" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">Jhon Tomson</div>
+            </div>
+        </a>
+    </nav>
+
+    <main class="px-[30px] md:flex md:bg-[#F4F7FF] p-[20px] md:px-[75px] md:py-[75px]">
+        <aside id="menuBar" class="bg-white absolute md:block rounded-2xl px-[20px] md:px-0 md:bg-none md:static md:block w-[300px] md:w-[370px] md:flex-initial shadow-lg md:shadow-none hidden md:bg-[#F4F7FF]">
+            <div class="flex items-center gap-3 mb-[56px]">
+                <div class="inline-block rounded-full p-0.5 bg-gradient-to-br from-yellow-500 to-blue-400">
+                    <img class="w-14 h-14 object-cover rounded-full border-2 border-white" src="asset/pexels-jack-winbow-1559486.jpg" alt="photo-profile">
+                </div>
+                <div><h1 style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">Jhon Thomson</h1><p>Entrepreneur, ID</p></div>
+            </div>
+            <div style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">
+                <ul class="cursor-pointer">
+                    <li class="flex gap-3 py-3"><i data-feather="user"></i>Profile</li>
+                    <li class="mx-5 py-3">
+                        <ul>
+                            <li class="flex gap-3 py-3"><i data-feather="credit-card"></i><a href="payment metode.html">Card</a></li></li>
+                            <li class="flex gap-3 py-3"><i data-feather="edit-3"></i><a href="profile.html">Edit Profile</a></li>
+                            <li class="flex gap-3 py-3"><i data-feather="unlock"></i><a href="change-password.html">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="plus-circle"></i><a href="creat-event.html">Creat Event</a></li>
+                    <li class="flex gap-3 py-3"><i data-feather="list"></i><a href="my-booking1.html">My Booking</a></li>
+                    <li class="flex gap-3 py-3 text-yellow-600"><i data-feather="heart"></i>My Wishlist</li>
+                    <li class="flex gap-3 py-3"><i data-feather="settings"></i>Seting</li>
+                </ul>
+            </div>
+        </aside> 
+
+        <article class="inline-block w-full bg-white p-[20px] md:px-[100px] md:py-[70px] rounded-2xl flex-1">
+            <div class="mb-[30px]" style="font-weight: 600; font-size: 20px; letter-spacing: 1px;">My Wishlist</div>
+            <div class="h-full py-[100px] md:py-auto md:px-auto">
+                <div style="font-weight: 600; font-size: 26px; letter-spacing: 1px;">No tickets bought</div>
+                <div class="text-[#B3B8B8] justify-center" style="font-weight: 400; font-size: 16px; letter-spacing: 1px;">It appears you haven’t bought any tickets yet. Maybe try searching these?</div>
+            </div>
+
+        </article>
+    </main>
+    <footer class="h-[476px] px-[30px] md:px-[330px] w-full  md:pt-[100px] md:px-[218px] md:bg-[#F4F7FF]">
+        <div class="md:flex md:justify-between">
+         <div class="mb-10">
+             <div class="flex items-center">
+                 <img src="asset/Fill 1.png" alt="logo">
+                 <div class="text-sky-600" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">We</div><div class="text-amber-500" style="font-family: 'Poppins'; font-weight: 600; font-size: 24px;">tick</div>
+             </div>
+             <div class="flex gap-2 py-3" style="font-family: 'Poppins'; font-weight: 400; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Find events you love with our</div>
+             <div>
+                 <ul class="flex gap-6">
+                     <li><img src="asset/bx_bxl-facebook-square.png"></li>
+                     <li><img src="asset/bx_bxl-whatsapp-square.png"></li>
+                     <li><img src="asset/bx_bxl-instagram-alt.png"></li>
+                     <li><img src="asset/bx_bxl-twitter.png"></li>
+                 </ul>
+             </div>
+             
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Wetick</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">About Us</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Blog</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Payments</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Mobile App</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Features</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Booking</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Create Event</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Discover</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Register</li>
+             </ul>
+         </div>
+         <div>
+             <ul class="pb-[10px] text-[#C1C5D0]">
+                 <li class="color-[#373A42] pb-[10px] text-black" style="font-family: 'Poppins'; font-weight: 600; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Company</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Partnership</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Help</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Terms of Service</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Privacy Policy</li>
+                 <li class="color-[#373A42] pb-[10px]" style="font-family: 'Poppins'; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 21px;">Sitemap</li>
+             </ul>
+         </div>
+        </div>
+         <p class="flex pb-[68px] pt-[130px] color-[#5A7184] text-[#C1C5D0]" style="font-family: 'Poppins'; font-weight: 600; font-size: 16px; letter-spacing: 1px; line-height: 21px;">© 2020 Wetick All Rights Reserved</p>
+     </footer>
+    <script>
+        feather.replace()
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>

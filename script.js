@@ -6,7 +6,7 @@ if (window.location.pathname === '/index.html'||
     window.location.pathname === '/my-wishlist.html'||
     window.location.pathname === '/my-booking1.html'||
     window.location.pathname === '/creat-event.html'||
-    window.location.pathname === '/Event-location.html'||
+    window.location.pathname === '/event-location.html'||
     window.location.pathname === '/booking.html'||
     window.location.pathname === '/payment-metode.html'){
     const tongler = document.getElementById('tongler')
